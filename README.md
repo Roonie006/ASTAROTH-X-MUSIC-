@@ -5,7 +5,7 @@ The easiest way to deploy this Bot
 
 - Support Channel :- [Astaroth x support](https://t.me/Astarothx_support)
 
-- Support Group :- [Awesome Support](https://t.me/astarothxsupport)
+- Support Group :- [Astaroth x Support](https://t.me/astarothxsupport)
 
 
 ```
