@@ -3,15 +3,15 @@ The easiest way to deploy this Bot
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/QueenArzoo/VCPlayBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
-- Support Channel :- [Awesome Bot](http://t.me/LaylaList)
+- Support Channel :- [Astaroth x support](https://t.me/Astarothx_support)
 
-- Support Group :- [Awesome Support](http://t.me/AwesomeSupport)
+- Support Group :- [Awesome Support](https://t.me/astarothxsupport)
 
 
 ```
 Please fork this repository don't import code
 Made with Python3
-(C) @QueenArzoo
+(C) https://t.me/A_STR_0TH (owner)
 
 ```
 
@@ -26,7 +26,7 @@ Made with Python3
    - `BOT_TOKEN` :  Make a Bot from [@Botfather](https://t.me/botfather) and fill it's bot token.
    - `SUDO_USERS` :  Fill Userid of yhe users whom you want to be able to control the bot. You can add multiple id by giving a space in b/w each id.
 
-Get STRING_NAME from here:  [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@QueenArzoo/VCPlayBot)
+Get STRING_NAME from here:  [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@roonie006/ASTAROTH-X-MUSIC)
 
 
 
@@ -91,5 +91,4 @@ If you donlt like to play in linked channel:
 
 #### Special Credits
 - [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
-- [Awesome Bot](http://t.me/LaylaList) Channel bot list
-- [Dev](http://t.me/HEROGAMERS1) Hero owner of this bot
+- [Dev](https://t.me/A_STR_0TH) ASTAROTH owner of this bot
