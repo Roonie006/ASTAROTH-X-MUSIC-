@@ -12,7 +12,6 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_NAME = getenv("BOT_NAME")
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "Astarothxsupport")
 BG_IMAGE = getenv("BG_IMAGE", "https://telegra.ph/file/6fcc3feae8449e8f7d39b.png")
-")
 admins = {}
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
