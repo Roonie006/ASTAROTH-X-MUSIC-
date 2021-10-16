@@ -56,7 +56,7 @@ async def start_(client: Client, message: Message):
                          "Commands", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "Donate", url=f"https://t.me/{OWNER_NAME}")
+                        "Donate", url=f"https://t.me/{A_STR_0TH}")
                 ],[
                     InlineKeyboardButton(
                         "Official Group", url=f"https://t.me/{SUPPORT_GROUP}"
@@ -80,7 +80,7 @@ async def start(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        f"""✅ **bot is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
+        f"""✅ **my days are darker than your nights**\n<b> **bomb implanted:**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -98,16 +98,16 @@ async def start(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>👋🏻 **Hello** {message.from_user.mention()}</b>
+        f"""<b>👋🏻 ** ̷H̷e̷l̷l̷o** {message.from_user.mention()}</b>
 
-**Please press the button below to read the explanation and see the list of available commands !**
+** ̷P̷l̷e̷a̷s̷e ̷p̷r̷e̷s̷s ̷t̷h̷e ̷b̷u̷t̷t̷o̷n ̷b̷e̷l̷o̷w ̷t̷o ̷r̷e̷a̷d ̷t̷h̷e ̷e̷x̷p̷l̷a̷n̷a̷t̷i̷o̷n ̷a̷n̷d ̷s̷e̷e ̷t̷h̷e ̷l̷i̷s̷t ̷o̷f ̷a̷v̷a̷i̷l̷a̷b̷l̷e ̷c̷o̷m̷m̷a̷n̷d̷s !**
 
 ⚡ __Powered by {BOT_NAME} A.I""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="❔ HOW TO USE ME", callback_data="cbguide"
+                        text=" HOW TO USE ME", callback_data="cbguide"
                     )
                 ]
             ]
@@ -117,9 +117,9 @@ async def help(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
 async def help_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>💡 Hello {message.from_user.mention} welcome to the help menu !</b>
+        f"""<b>💡  ̷H̷e̷l̷l̷o {message.from_user.mention} ̷w̷e̷l̷c̷o̷m̷e ̷t̷o ̷t̷h̷e ̷h̷e̷l̷p ̷m̷e̷n̷u !</b>
 
-**in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
+**i̷n ̷t̷h̷i̷s ̷m̷e̷n̷u ̷y̷o̷u ̷c̷a̷n ̷o̷p̷e̷n ̷s̷e̷v̷e̷r̷a̷l ̷a̷v̷a̷i̷l̷a̷b̷l̷e ̷c̷o̷m̷m̷a̷n̷d ̷m̷e̷n̷u̷s̷, ̷i̷n ̷e̷a̷c̷h ̷c̷o̷m̷m̷a̷n̷d ̷m̷e̷n̷u ̷t̷h̷e̷r̷e ̷i̷s ̷a̷l̷s̷o ̷a ̷b̷r̷i̷e̷f ̷e̷x̷p̷l̷a̷n̷a̷t̷i̷o̷n ̷o̷f ̷e̷a̷c̷h ̷c̷o̷m̷m̷a̷n̷d**
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
@@ -134,6 +134,7 @@ async def help_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
+
                         "Admin Control", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
