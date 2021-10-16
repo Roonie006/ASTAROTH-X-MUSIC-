@@ -51,10 +51,9 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>💡 Hello there, welcome to the help menu !</b>
+        f"""<b>💡ʜᴇʟʟᴏ ᴛʜᴇʀᴇ, ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ !</ʙ>
 
-**in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
-
+**ɪɴ ᴛʜɪꜱ ᴍᴇɴᴜ ʏᴏᴜ ᴄᴀɴ ᴏᴘᴇɴ ꜱᴇᴠᴇʀᴀʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅ ᴍᴇɴᴜꜱ, ɪɴ ᴇᴀᴄʜ ᴄᴏᴍᴍᴀɴᴅ ᴍᴇɴᴜ ᴛʜᴇʀᴇ ɪꜱ ᴀʟꜱᴏ ᴀ ʙʀɪᴇꜰ ᴇxᴘʟᴀɴᴀᴛɪᴏɴ ᴏꜰ ᴇᴀᴄʜ ᴄᴏᴍᴍᴀɴᴅ**
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
