@@ -10,7 +10,7 @@ from VCPlayBot.modules.play import cb_admin_check
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>✨ **Welcome user, i'm {query.message.from_user.mention}** \n
+        f"""<b>✨ ** ̷W̷e̷l̷c̷o̷m̷e ̷u̷s̷e̷r, i'm {query.message.from_user.mention}** \n
 💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) ̷𝗮̷𝗹̷𝗹̷𝗼̷𝘄 ̷𝘆̷𝗼̷𝘂 ̷𝘁̷𝗼 ̷𝗽̷𝗹̷𝗮̷𝘆 ̷𝗺̷𝘂̷𝘀̷𝗶̷𝗰 ̷𝗼̷𝗻 ̷𝗴̷𝗿̷𝗼̷𝘂̷𝗽̷𝘀 ̷𝘁̷𝗵̷𝗿̷𝗼̷𝘂̷𝗴̷𝗵 ̷𝘁̷𝗵̷𝗲 ̷𝗻̷𝗲̷𝘄 ̷𝗧̷𝗲̷𝗹̷𝗲̷𝗴̷𝗿̷𝗮̷𝗺̷'̷𝘀 ̷𝘃̷𝗼̷𝗶̷𝗰̷𝗲 ̷𝗰̷𝗵̷𝗮̷𝘁̷𝘀 !**
 
 💡 **   ̷𝗙̷𝗶̷𝗻̷𝗱 ̷𝗼̷𝘂̷𝘁 ̷𝗮̷𝗹̷𝗹 ̷𝘁̷𝗵̷𝗲 ̷𝗕̷𝗼̷𝘁̷'̷𝘀 ̷𝗰̷𝗼̷𝗺̷𝗺̷𝗮̷𝗻̷𝗱̷𝘀 ̷𝗮̷𝗻̷𝗱 ̷𝗵̷𝗼̷𝘄 ̷𝘁̷𝗵̷𝗲̷𝘆 ̷𝘄̷𝗼̷𝗿̷𝗸 ̷𝗯̷𝘆 ̷𝗰̷𝗹̷𝗶̷𝗰̷𝗸̷𝗶̷𝗻̷𝗴 ̷𝗼̷𝗻 ̷𝘁̷𝗵̷𝗲 »  𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗯𝘂𝘁𝘁𝗼𝗻 !**
@@ -60,33 +60,33 @@ async def cbhelp(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "📚 Basic Cmd", callback_data="cbbasic"
+                        "Basic Control", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "📕 Advanced Cmd", callback_data="cbadvanced"
+                        "Advanced Comtrol", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📘 Admin Cmd", callback_data="cbadmin"
+                        "Admin Control", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "📗 Sudo Cmd", callback_data="cbsudo"
+                        "Sudo Control", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📙 Owner Cmd", callback_data="cbowner"
+                        "Owner Control", callback_data="cbowner"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📔 Fun Cmd", callback_data="cbfun"
+                        "Fun Control", callback_data="cbfun"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK TO HELP", callback_data="cbguide"
+                        "BACK TO HOME", callback_data="cbguide"
                     )
                 ]
             ]
@@ -97,7 +97,7 @@ async def cbhelp(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the basic commands</b>
+        f"""<b>🀄️ here is the basic commands</b>
 
 🎧 [ GROUP VC CMD ]
 
@@ -125,7 +125,7 @@ async def cbbasic(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "BACK", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -136,7 +136,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadvanced"))
 async def cbadvanced(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the advanced commands</b>
+        f"""<b>🀄️ here is the advanced commands</b>
 
 /start (in group) - see the bot alive status
 /reload - reload bot and refresh the admin list
@@ -149,7 +149,7 @@ async def cbadvanced(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "BACK", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -160,7 +160,7 @@ async def cbadvanced(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the admin commands</b>
+        f"""<b>🀄️ here is the admin commands</b>
 
 /player - show the music playing status
 /pause - pause the music streaming
@@ -183,7 +183,7 @@ async def cbadmin(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "BACK", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -194,7 +194,7 @@ async def cbadmin(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the sudo commands</b>
+        f"""<b>🀄️ here is the sudo commands</b>
 
 /userbotleaveall - order the assistant to leave from all group
 /gcast - send a broadcast message trought the assistant
@@ -207,7 +207,7 @@ async def cbsudo(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "BACK", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -218,7 +218,7 @@ async def cbsudo(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbowner"))
 async def cbowner(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the owner commands</b>
+        f"""<b>🀄️ here is the owner commands</b>
 
 /stats - show the bot statistic
 /broadcast - send a broadcast message from bot
@@ -226,14 +226,14 @@ async def cbowner(_, query: CallbackQuery):
 /unblock (user id - reason) - unblock user you blocked for using your bot
 /blocklist - show you the list of user was blocked for using your bot
 
-📝 note: all commands owned by this bot can be executed by the owner of the bot without any exceptions.
+📝 note: all commands owned by this bot can be executed by the owner of the bot without any LIMITATIONS.
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "BACK", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -244,7 +244,7 @@ async def cbowner(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbfun"))
 async def cbfun(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>🏮 here is the fun commands</b>
+        f"""<b>🀄️ here is the fun commands</b>
 
 /chika - check it by yourself
 /wibu - check it by yourself
@@ -257,7 +257,7 @@ async def cbfun(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "BACK", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -280,7 +280,7 @@ async def cbguide(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "📚 Command List", callback_data="cbhelp"
+                        " Command List", callback_data="cbhelp"
                     )
                 ],
                 [
@@ -371,7 +371,7 @@ and you can also set a time for the ban and mute penalties for members in your g
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 GO BACK", callback_data="cbback"
+                        "GO BACK", callback_data="cbback"
                     )
                 ]
             ]
@@ -401,7 +401,7 @@ async def cbdelcmds(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 GO BACK", callback_data="cbback"
+                        "GO BACK", callback_data="cbback"
                     )
                 ]
             ]
@@ -412,42 +412,42 @@ async def cbdelcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbcmds"))
 async def cbhelps(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>💡 Hello there, welcome to the help menu !</b>
+        f"""<b>🃏 ̷H̷e̷l̷l̷o ̷t̷h̷e̷r̷e̷, ̷w̷e̷l̷c̷o̷m̷e ̷t̷o ̷t̷h̷e ̷h̷e̷l̷p ̷m̷e̷n̷u !</b>
 
-**in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
+** ̷i̷n ̷t̷h̷i̷s ̷m̷e̷n̷u ̷y̷o̷u ̷c̷a̷n ̷o̷p̷e̷n ̷s̷e̷v̷e̷r̷a̷l ̷a̷v̷a̷i̷l̷a̷b̷l̷e ̷c̷o̷m̷m̷a̷n̷d ̷m̷e̷n̷u̷s̷, ̷i̷n ̷e̷a̷c̷h ̷c̷o̷m̷m̷a̷n̷d ̷m̷e̷n̷u ̷t̷h̷e̷r̷e ̷i̷s ̷a̷l̷s̷o ̷a ̷b̷r̷i̷e̷f ̷e̷x̷p̷l̷a̷n̷a̷t̷i̷o̷n ̷o̷f ̷e̷a̷c̷h ̷c̷o̷m̷m̷a̷n̷d**
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📚 Basic Cmd", callback_data="cbbasic"
+                        "Basic Control", callback_data="cbbasic"
                     ),
                     InlineKeyboardButton(
-                        "📕 Advanced Cmd", callback_data="cbadvanced"
+                        "Advanced Control", callback_data="cbadvanced"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📘 Admin Cmd", callback_data="cbadmin"
+                        "Admin Control", callback_data="cbadmin"
                     ),
                     InlineKeyboardButton(
-                        "📗 Sudo Cmd", callback_data="cbsudo"
+                        "Sudo Control", callback_data="cbsudo"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📙 Owner Cmd", callback_data="cbowner"
+                        "Owner Control", callback_data="cbowner"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📔 Fun Cmd", callback_data="cbfun"
+                        "Fun Control", callback_data="cbfun"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK TO HOME", callback_data="cbstart"
+                        "BACK TO HOME", callback_data="cbstart"
                     )
                 ]
             ]
@@ -470,7 +470,7 @@ async def cbguides(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK TO HOME", callback_data="cbstart"
+                        "BACK TO HOME", callback_data="cbstart"
                     )
                 ]
             ]
