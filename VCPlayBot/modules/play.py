@@ -491,14 +491,14 @@ async def play(_, message: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add assistant to your Group and try again manually request here @AwesomeSupport with your group link</b>",
+                        "\n\nOr manually add assistant to your Group and try again manually request here @astarothxsupport with your group link</b>",
                     )
     try:
         await USER.get_chat(chid)
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually request here @AwesomeSupport with your group link</i>"
+            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually request here @astarothxsupport with your group link</i>"
         )
         return
     text_links=None
@@ -625,7 +625,7 @@ async def play(_, message: Message):
             toxxt = "**Select the song you want to play**\n\n"
             j = 0
             useer=user_name
-            emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","6️⃣",]
+            emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣","🔟",]
 
             while j < 5:
                 toxxt += f"{emojilist[j]} <b>Title - [{results[j]['title']}](https://youtube.com{results[j]['url_suffix']})</b>\n"
@@ -640,12 +640,16 @@ async def play(_, message: Message):
                         InlineKeyboardButton("1️⃣", callback_data=f'plll 0|{query}|{user_id}'),
                         InlineKeyboardButton("2️⃣", callback_data=f'plll 1|{query}|{user_id}'),
                         InlineKeyboardButton("3️⃣", callback_data=f'plll 2|{query}|{user_id}'),
+                        InlineKeyboardButton("4️⃣", callback_data=f'plll 5|{query}|{user_id}'),
                     ],
                     [
-                        InlineKeyboardButton("4️⃣", callback_data=f'plll 3|{query}|{user_id}'),
-                        InlineKeyboardButton("5️⃣", callback_data=f'plll 4|{query}|{user_id}'),
-                        InlineKeyboardButton("6️⃣", callback_data=f'plll 5|{query}|{user_id}'),
-                    ],
+                        InlineKeyboardButton("5️⃣", callback_data=f'plll 3|{query}|{user_id}'),
+                        InlineKeyboardButton("6️⃣", callback_data=f'plll 4|{query}|{user_id}'),
+                        InlineKeyboardButton("7️⃣", callback_data=f'plll 5|{query}|{user_id}'),
+                        InlineKeyboardButton("8️⃣", callback_data=f'plll 5|{query}|{user_id}'),
+                        InlineKeyboardButton("9️⃣", callback_data=f'plll 5|{query}|{user_id}'),
+                        InlineKeyboardButton("🔟", callback_data=f'plll 5|{query}|{user_id}'),
+                     ],
                     [InlineKeyboardButton(text="❌", callback_data="cls")],
                 ]
             )       
@@ -792,14 +796,14 @@ async def ytplay(_, message: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add assistant to your Group and try again manually request here @AwesomeSupport with your group link</b>",
+                        "\n\nOr manually add assistant to your Group and try again manually request here @astarothxsupport with your group link</b>",
                     )
     try:
         await USER.get_chat(chid)
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually request here @AwesomeSupport with your group link</i>"
+            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually request here @astarothxsupport with your group link</i>"
         )
         return
     await lel.edit("🔎 <b>Finding</b>")
@@ -949,14 +953,14 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @VCPlayBot to your Group and try again manually request here @AwesomeSupport with your group link</b>",
+                        "\n\nOr manually add @VCPlayBot to your Group and try again manually request here @astarothxsupport with your group link</b>",
                     )
     try:
         await USER.get_chat(chid)
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            "<i> helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually request here @AwesomeSupport with your group link</i>"
+            "<i> helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually request here @astarothxsupport with your group link</i>"
         )
         return
     requested_by = message_.from_user.first_name
