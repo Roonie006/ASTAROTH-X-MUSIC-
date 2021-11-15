@@ -1,1 +1,1 @@
-web : python3 -m VCPlayBot
+web: python3 -m VCPlayBot
